@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Envio de Arquivos</h2>
+@using (Html.BeginForm("SalvaArquvivo", "Arquivo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<input type="file" name="arquivo" />
+<button type="submit" class="btn btn-primary form-control" >Enviar</button>
+}
+
